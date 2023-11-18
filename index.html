@@ -9,29 +9,67 @@
         body {
             font-family: 'Arial', sans-serif;
             margin: 20px;
-        }
-
-        h1 {
+            background-color: #f4f4f4;
             color: #333;
         }
 
+        header {
+            background-color: #3498db;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
         h2 {
-            color: #555;
+            color: #3498db;
         }
 
         .section {
-            margin-bottom: 20px;
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         .contact-info {
             list-style: none;
             padding: 0;
+            font-size: 18px;
         }
 
-        .work-experience,
-        .certifications,
+        .contact-info li {
+            margin-bottom: 10px;
+        }
+
+        .work-experience article,
+        .certifications ul,
         .education {
-            margin-bottom: 40px;
+            font-size: 18px;
+        }
+
+        .work-experience article,
+        .certifications ul,
+        .education p {
+            margin-bottom: 10px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 18px;
+        }
+
+        .skills div {
+            background-color: #3498db;
+            color: white;
+            padding: 8px;
+            margin: 4px;
+            border-radius: 4px;
         }
     </style>
 </head>
@@ -52,24 +90,39 @@
         </ul>
     </section>
 
+    <section class="section skills">
+        <h2>Skills</h2>
+        <div>Synchronous & Asynchronous APEX</div>
+        <div>Apex Triggers</div>
+        <div>LWC (Lightning Web Components)</div>
+        <div>Aura Components</div>
+        <div>Integrations (Rest & SOAP)</div>
+        <div>Salesforce Configuration</div>
+        <div>HTML, CSS, Javascript</div>
+        <div>Managed Packages</div>
+        <div>Heroku (Python Flask App)</div>
+        <div>Lightning Flows</div>
+        <div>Visualforce Pages</div>
+        <div>Sales Cloud / Community Cloud Security</div>
+        <div>Version Controls</div>
+        <div>Design Patterns and Principles</div>
+    </section>
+
     <section class="section work-experience">
         <h2>Work Experience</h2>
         <article>
             <h3>MindRuby Technologies (August 2022 - Present)</h3>
             <p>Worked for Moneyspot financial services to automate their processes and provide scalable custom solutions using LWC, APEX, and Integration while respecting the Platform limits.</p>
-            <!-- Add more details as needed -->
         </article>
 
         <article>
             <h3>Dazeworks Inc. (May 2021 - August 2022)</h3>
             <p>Worked for Paycor Project to provide custom solutions and migrated all the process builders to Lightning Flows while following best practices.</p>
-            <!-- Add more details as needed -->
         </article>
 
         <article>
             <h3>CRM Services India (March 2020 - May 2021)</h3>
             <p>Support Associate - Managed community cloud content and security permissions of users for the customer and partner portal and managed knowledge articles.</p>
-            <!-- Add more details as needed -->
         </article>
     </section>
 
